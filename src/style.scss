@@ -97,8 +97,8 @@ $darkColor: #2f2d52;
   .container {
     border: 1px solid white;
     border-radius: 10px;
-    width: 65%;
-    height: 80%;
+    width: 90%;
+    height: 100%;
     display: flex;
     overflow: hidden;
     @include tablet {
@@ -201,7 +201,7 @@ $darkColor: #2f2d52;
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #fcfcfc;
         display: flex;
         align-items: center;
         justify-content: space-between;

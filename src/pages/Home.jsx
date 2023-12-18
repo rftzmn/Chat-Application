@@ -1,3 +1,4 @@
+import Cards from "../components/Cards";
 import Chat from "../components/Chat";
 import Sidebar from "../components/Sidebar";
 
@@ -6,7 +7,8 @@ const Home = () => {
     <div className="home">
       <div className="container">
         <Sidebar></Sidebar>
-        <Chat></Chat>
+        {/* <Chat></Chat> */}
+        <Cards></Cards>
       </div>
     </div>
   );

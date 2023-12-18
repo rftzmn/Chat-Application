@@ -3,9 +3,10 @@ import User from "../img/react.png";
 import { auth } from "../firebase";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const { currentUser } = useContext(AuthContext);
-
+  const navigate = useNavigate();
   return (
     <div className="navbar">
       <span className="logo">Live Chat</span>
@@ -15,6 +16,7 @@ const Navbar = () => {
         <button
           onClick={() => {
             signOut(auth);
+            navigate("/");
           }}
         >
           logout
