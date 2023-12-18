@@ -33,7 +33,7 @@ const Register = () => {
         });
 
       //Create a unique image name
-      const storageRef = ref(storage, `${file.name}`);
+      const storageRef = ref(storage, displayName);
       console.log(storageRef);
       const uploadTask = uploadBytesResumable(storageRef, file);
 
